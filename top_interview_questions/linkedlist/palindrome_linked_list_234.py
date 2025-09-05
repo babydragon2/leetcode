@@ -1,5 +1,4 @@
 # Definition for singly-linked list.
-import re
 from typing import Optional
 
 class ListNode:
