@@ -6,7 +6,7 @@ class Solution:
             return False
 
         y = log(n,3)
-        y = round(y, 10) 
+        y = round(y) 
         return 3**y == n
 
 s = Solution()
