@@ -42,4 +42,14 @@ class Solution:
                 return headA
             headA = headA.next
             headB = headB.next
-        return None
+
+
+# two pointer method considering path length (reset pointers to the head of the other path)
+class Solution1:
+    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+        pa, pb = headA, headB
+        while pa != pb:
+            pa = pa.next if pa else headB
+            pb = pb.next if pb else headA
+        return pa 
+
